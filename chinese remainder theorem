@@ -1,0 +1,15 @@
+statement
+If m1,m2,m3..... are several coprime numbers and M = m1*m2*m3... then there exists one and only one x such that 0<=x<=M and x % mi = ai for 0<ai<mi 
+Task : given x%m1 =a1 and x%m2 = a2 find the value of x%(m1*m2)
+solution : since m1 and m2 are coprime so c1 and c2 are guarenteed to exists such that c1*m1+c2*m2=1........(i)
+         and hence soln is x = a1*c2*m2 + a2*c1*m1 (mod m1*m2)...........(ii)
+verification:
+        from (ii):
+        x = a1c2m2+a2c1m1 (mod m1m2)
+        x = a1(1 - c1m1) + a2c1m1 (mod m1m2) [from (i)]
+        x = a1 + (a2-a1)c1m1 (mod m1m2)
+        implying x = a1(mod m1)
+        similarly x = a2(mod m2)
+Hence x = a1*c2*m2 + a2*c1*m1 is a solution to the problem.
+
+Now how to calculate c1 and c2 is dealth in topic extended euclids algorithm.
