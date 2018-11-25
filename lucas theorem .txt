@@ -11,4 +11,4 @@ by lucas theorem :
 now C(234,98) % 7 = [ C(4,2) * C(5,0) * C(3,0)] % 7
 		  = (6*1*1)%7							
 		  = 6
-									
+its corresponding implementation is in file lucas.py							
