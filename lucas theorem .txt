@@ -1,0 +1,14 @@
+lucas therorem is used to calculate C(n,r)%m using an algorithm if m is a prime.
+Theory:
+write n and r in base m and calculate binomial coefficient of each digits.
+The product of binomial coefficient of every digits is the answer.
+Example:
+C(234,98) % 7
+directly : C(234,98) = (65723159850090865941120885826673446832000736874733946359228815639515) % 7 = 6
+by lucas theorem : 
+234 = 453(base 7)
+98 =  200(base 7)
+now C(234,98) % 7 = [ C(4,2) * C(5,0) * C(3,0)] % 7
+									= (6*1*1)%7
+									= 6
+									
