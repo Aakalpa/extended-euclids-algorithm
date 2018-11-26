@@ -11,7 +11,7 @@ def extended_euclid_gcd(a,b): #returns (c1,c2,g). g denotes gcd
         return (1 , 0 , a)
     else :
         (c1,c2,g) = extended_euclid_gcd(b,a%b)
-        return (c2 , c1 - a//b *y , g)
+        return (c2 , c1 - a//b *c2 , g)
      
 #working:
 #if b=0 then 1*a + 0*b = a fits eqn
