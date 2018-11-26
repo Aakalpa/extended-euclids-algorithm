@@ -1,3 +1,4 @@
+#this solution is not correct
 memo={}
 def C(n,r,p):
     #calculates C(n,r) % p where p is a prime number using lucas theorem
